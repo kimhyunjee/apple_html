@@ -3,12 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <title>Document</title>
+    <link href="main.css" rel="stylesheet" />
   </head>
   <body>
-    <img
-      src="lion.png"
-      style="width: 100%; display: block; margin-left: auto; margin-right: auto"
-    />
+    <img src="lion.png" class="img" />
     <h3
       style="
         font-size: 16vw;
@@ -21,6 +19,8 @@
       Lion
     </h3>
     <!-- font-weight 써서 직접 지정해줘도 되고 strong 태그 써도 가능 -->
-    <p><span style="color: red; font-weight: 600">Front-end</span> Developer</p>
+    <p id="special" class="content">
+      <span style="color: red; font-weight: 600">Front-end</span> Developer
+    </p>
   </body>
 </html>

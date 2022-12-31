@@ -1,0 +1,24 @@
+/* cascading style sheet = css 스타일 보관 파일 */
+/* class selector */
+.img {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* tag selector */
+p {
+  text-align: center;
+}
+
+/* id selector */
+#special {
+  text-align: center;
+}
+
+/* 선택자 우선순위 id(100)> class(10) > tag(1) 
+참고로 inline style은 (1000) */
+
+.content {
+  color: green;
+}
