@@ -1,0 +1,73 @@
+/* cascading style sheet = css 스타일 보관 파일 */
+/* class selector */
+.img {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* tag selector */
+p {
+  text-align: center;
+}
+
+/* id selector */
+#special {
+  text-align: center;
+}
+
+/* 선택자 우선순위 id(100)> class(10) > tag(1) 
+참고로 inline style은 (1000) */
+
+.content {
+  color: blue;
+}
+
+.box {
+  width: 200px;
+  background-color: cadetblue;
+  margin: 30px;
+  padding: 40px;
+  /* border: 4px solid black; */
+  /* solid 아니면 dotted */
+  border-radius: 15px;
+  /* display: block; div는 dispaly:block; 속성 이미 가지고있음*/
+  margin-left: auto;
+  margin-right: auto;
+  /* 부모태그에 먹여도 잘 먹음 /일부 스타일은 자동으로 자식한테까지 감 inherit
+  color,font-family, font-size, */
+  font-size: 10px;
+  color: white;
+  box-shadow: 5px 5px black;
+}
+
+.container {
+  width: 800px;
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+  background: aquamarine;
+}
+
+.left-menu {
+  width: 30%;
+  height: 400px;
+  background: cornflowerblue;
+  float: left;
+}
+
+.right {
+  width: 80%;
+  height: 400px;
+  background: coral;
+  float: left;
+}
+
+.footer {
+  width: 100%;
+  height:100px
+  background-color: #eee;
+  clear:both;
+}
