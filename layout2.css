@@ -1,0 +1,17 @@
+.container {
+  width: 800px;
+}
+
+.blog-left {
+  width: 80%;
+  height: 200px;
+  background-color: #eee;
+  float: left;
+}
+
+.blog-img {
+  width: 20%;
+  height: 200px;
+  background-color: yellow;
+  float: left;
+}
