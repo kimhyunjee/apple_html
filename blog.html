@@ -5,9 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
-    <link href="blog.css" rel="stylesheet" />
+    <link class="link" href="blog.css" rel="stylesheet" />
   </head>
   <body>
+    <nav>
+      <!-- class 명에 두 가지도 가능 <ul class="navbar content > 로 해도 가능 -->
+      <ul class="navbar">
+        <li><a class="link" href="#">영화</a></li>
+        <li><a class="link" href="#">맛집</a></li>
+        <li><a class="link" href="#">IT</a></li>
+        <li><a class="link" href="#">컴퓨터</a></li>
+      </ul>
+    </nav>
     <div class="container">
       <div class="content">
         <div>
@@ -18,7 +27,8 @@
           </div>
         </div>
         <div class="title">
-          <h4 style="margin: 5px; clear: both">블로그 글제목</h4>
+          <div style="clear: both"></div>
+          <h4 style="margin: 5px">블로그 글제목</h4>
           <p style="margin: 5px">블로그 글내용</p>
         </div>
       </div>
