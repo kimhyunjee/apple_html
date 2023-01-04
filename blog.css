@@ -28,3 +28,24 @@
   width: 50px;
   float: left;
 }
+
+.navbar li {
+  display: inline-block;
+  width: 60px;
+  text-align: center;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.navbar a {
+  font-size: 16px;
+  text-decoration: none;
+  /* 밑줄 혹은 한번 누른 후 보라색으로 변경되는 것 방지 */
+}
+.link {
+  text-decoration: none;
+}
+.link:visited {
+  color: blue;
+}
