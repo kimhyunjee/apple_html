@@ -1,6 +1,6 @@
 .main-background {
   width: 100%;
-  height: 500px;
+  height: 800px;
   /* background-image : url(../img/shoes.jpg), url(person.jpg); 이미지 두개 겹칠 때 */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(shoes.jpg);
@@ -15,11 +15,14 @@
   /* 보정/ 안에 글씨가 있으면 글씨에도 필터적용됨 */
   filter: brightness(70%);
   padding: 1px;
+  position: relative;
 }
 .main-title {
   color: white;
   font-size: 40px;
   font-weight: bold;
+  text-align: center;
+
   /* margin collapse effect 버그있음 
   분명 글씨에다가 마진탑 준건데 이미지 자체에다가 마진탑이 걸려버림
   main-background 와main-title 박스가 지금 맨 위쪽 테두리가 겹침/이럴 경우 마진도 합쳐짐
@@ -29,4 +32,30 @@
     => 두 박스의 테두리가 겹치지 않도록 해주면 원하는 마진을 각자 줄 수 있음
       여기서는 main-background에다가  padding: 1px;주는 것으로 해결  */
   margin-top: 200px;
+}
+
+.main-content {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.main-button {
+  /* position 부여하면 좌표이동되고, 공중에 뜨는 것처럼 됨
+  position : static; 기준x (좌표적용 불가) 
+  position : relative;  기준이 내 원래 위치
+  position : absolute;  기준이 내 부모 ( relative를 가진 부모 )
+  position : fixed; 기준이 브라우저 창 (viewport) */
+  position: absolute;
+  bottom: 300px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  padding: 15px;
+  font-size: 20px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
 }
