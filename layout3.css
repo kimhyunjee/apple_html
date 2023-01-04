@@ -1,0 +1,32 @@
+.main-background {
+  width: 100%;
+  height: 500px;
+  /* background-image : url(../img/shoes.jpg), url(person.jpg); 이미지 두개 겹칠 때 */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(shoes.jpg);
+  /* px, % 가능함, cover 는 배경으로 꽉채워주세요 뜻 (그림이 잘려도 꽉채워란뜻)
+  contain은 이미지가 잘리지 않게 (대신 여백이 남음)*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* size를 %로 줬을 때, 여러 장이 나와보임. 반복되지 않게 쓰는 속성 */
+  background-position: center;
+  /* 웹사이트가 스크롤될 때 배경이 신기하게 동작하게 만들고 싶으면 */
+  /* background-attachment: fixed; */
+  /* 보정/ 안에 글씨가 있으면 글씨에도 필터적용됨 */
+  filter: brightness(70%);
+  padding: 1px;
+}
+.main-title {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  /* margin collapse effect 버그있음 
+  분명 글씨에다가 마진탑 준건데 이미지 자체에다가 마진탑이 걸려버림
+  main-background 와main-title 박스가 지금 맨 위쪽 테두리가 겹침/이럴 경우 마진도 합쳐짐
+  (내부에서 만나든 외부에서 만나든.. ) 
+  ※1. 마진을 하나로 합쳐주고
+    2. 혹여나 둘 다 마진이 있으면 둘 중에 더 큰 마진을 하나만 적용하게 됨
+    => 두 박스의 테두리가 겹치지 않도록 해주면 원하는 마진을 각자 줄 수 있음
+      여기서는 main-background에다가  padding: 1px;주는 것으로 해결  */
+  margin-top: 200px;
+}
