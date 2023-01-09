@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>이미지 위에 글자쓰기 레이아웃</title>
     <link href="layout3.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
   </head>
   <!-- body에도 그지같이 기본 마진 있음 -->
   <body style="margin: 0px">
@@ -28,5 +32,28 @@
       <h4>어떻게 신발을 사는지</h4>
       <p>글 내용이 들어갑니다</p>
     </div>
+    <!-- <form action="경로" method="get"> -->
+    <form>
+      <input
+        type="text"
+        value="미리 채워지는 값"
+        placeholder="미리 채워지는데 좀 반투명하고 사라지는 배경글자"
+        name="name(프론트에서는잘안씀/서버개발시 필요/name이라는 이름으로 서버에 전달됨)"
+      />
+      <input type="email" />
+      <input type="password" />
+      <input type="date" />
+      <input type="checkbox" /> checkbox <input type="radio" /> radio
+      <input type="button" />
+      <!-- crtl+spacebar 하면 자동완성 -->
+      <select>
+        <option>aaa</option>
+        <option>bbb</option>
+        <option>ccc</option>
+      </select>
+      <textarea rows="10">드래그로 사이즈 조절 가능</textarea>
+      <input type="submit" />
+      <button type="submit">전송</button>
+    </form>
   </body>
 </html>
